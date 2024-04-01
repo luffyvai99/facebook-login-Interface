@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+   
+    background: #f4f4f4;
+}
+
+/* .......main-container......... */
+.outer-container{
+    height: 100vh;
+    padding: 92px 0px 132px;
+    background-color: #F0F2F5;
+   
+}
+.main-container{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    gap: 60px;
+    color: #333333;
+    transition:  all 0.15s ease-in-out ;
+}
+.main-container .leftside{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.leftside .logo{
+    max-width: 350px;
+}
+
+.leftside .logo img{
+   width: 90%;
+  
+
+}
+.text-content h2{
+    font-size: 2.9rem;
+    font-weight: 400;
+}
+.text-content p{
+    font-size: 1.2rem;
+}
+.leftside .accounts{
+    display: flex;
+    gap: 40px;
+}
+.account{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #181616;
+    background-color: #ffffff;
+    min-width: 180px;
+    min-height: 240px;
+    border-radius: 18px;
+    transition: 0.15s ease-in-out;
+}
+.account img{
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+#add-account{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#add-account .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-color: #F5F6F7;
+    font-size: 3.6rem;
+    color: #1976F2;
+}
+#add-account h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #1976F2;
+}
+
+.account:hover{
+    transform: scale(1);
+    box-shadow: 1px 1px 10px rgba(1,1,1,0.4) ;
+}
+/* ................rightside............. */
+.rightside{
+    width: 45%;
+ 
+}
+ .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0px 24px;
+    gap: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(1,1,1,0.4) ;
+    margin-top: 50px;
+}
+.content input, .login-btn{
+    width: 96%;
+    margin: 2%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #f1eeee;
+    font-size: 1.2rem;
+}
+.login-btn{
+    background-color: #1976F2;
+    color: #ffffff;
+    font-size: 1.9rem;
+    font-weight: 600;
+    border: none;
+}
+.content p{
+    text-align: center;
+    color: #1976F2;
+}
+.create-btn{
+    margin: 4px auto;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+     font-weight: 600;
+    background-color: #36A420;
+}
+.rightside p{
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-top: 20px;
+}
+@media (max-width:786px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       justify-content: center;
+       align-items: center;
+    }
+    .main-container .leftside{
+        width: 98%;
+       margin: 1%;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightside{
+        width: 90%;
+        margin: auto;
+     text-align: center;
+    }
+    .content{
+       
+        width: 90%;
+        background-color: white;
+        padding: 14px 0px 30px;
+        gap: 18px;
+       margin: auto;
+    }
+}
